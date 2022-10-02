@@ -1,7 +1,7 @@
 const express = require("express");
 const path = require("path");
 const app = express();
-const port = process.env.PORT || 80;
+const port = process.env.PORT || 8000;
 const mongoose = require('mongoose');
 const bodyparser = require('body-parser');
 mongoose.connect('mongodb://localhost:27017/learning', {useNewUrlParser: true, useUnifiedTopology: true});
@@ -10,7 +10,7 @@ const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {
   // we're connected!
-  console.log("!!connected successfully")
+  console.log("!!connection is successfully")
 });
 
 const learningSchema = new mongoose.Schema({
