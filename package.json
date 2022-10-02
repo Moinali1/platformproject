@@ -1,0 +1,20 @@
+{
+  "name": "newwebp3",
+  "version": "1.0.0",
+  "description": "new site",
+  "main": "aap.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "web"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1",
+    "mongoose": "^6.6.3",
+    "pug": "^3.0.2"
+  }
+}

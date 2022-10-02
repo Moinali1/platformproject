@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    title Moon
+    block scripts
+      script(src='../static/index.js')
+    block style 
+        style
+            include ../static/style.css  
+  body
+    nav#navbar
+        div#logo
+            img(src="../static/logo.png", alt="") 
+        ul 
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/") Class Info]
+            li #[a(href="/contact") Contact Us]
+    block content   
+    block foot
+      footer
+        div#end
+           | copyright© 2022 | All rigths reserved
