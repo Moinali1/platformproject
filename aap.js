@@ -8,10 +8,10 @@ mongoose.connect('mongodb://localhost:27017/learning', {useNewUrlParser: true, u
 
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
-// db.once('open', function() {
-//   // we're connected!
-//   console.log("connected successfully")
-// });
+db.once('open', function() {
+  // we're connected!
+  console.log("connected successfully")
+});
 
 const learningSchema = new mongoose.Schema({
     name: String,
