@@ -1,0 +1,87 @@
+#logo 
+{
+    position: relative;
+    margin: auto;
+    padding: 0px;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+}
+#logo a
+{
+    align-items: center;
+    padding: 0px 13px;
+}
+#navbar ul {
+flex-direction: column;
+padding: 0px 0px 8px 11px;
+}
+#navbar ul li 
+{
+    padding: 0px 10px;
+    text-align: center;
+}
+#logo p{
+    font-size: 2.2rem;
+}
+
+#logo img{
+    width: 90px;
+    height: 90px;
+}
+#introsection::before {
+top: 363px;
+height: 363px;
+}
+#introsection div.d1 {
+font-size: 1.8rem;
+text-align: center;
+}
+#introsection div.d2 {
+    font-size: 12px;
+}
+
+#missionsection h2
+{
+    margin: 10px auto ;
+}
+#missionsection::before
+{
+    top:726px;
+    height: 800px;
+}
+#item
+{
+    width: 300px;
+}
+#missionbox
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#missionsection
+{
+    width: 100%;
+    height: 792px;
+}
+
+#sponsorsection
+{
+    display: flex;
+    flex-direction: column;
+    height: 640px;
+}
+#sponsors
+{
+    display: flex;
+    flex-direction: column;
+}
+.sp
+{
+    padding: 3px 0px;
+}

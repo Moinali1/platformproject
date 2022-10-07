@@ -20,7 +20,7 @@
     top: 0;
     left: 0;
     z-index: -1;
-    opacity: 0.8;
+    /* opacity: 0.8; */
 }
 
 #heading{
@@ -46,11 +46,24 @@
     color: rgba(46, 44, 44, 0.719);
     text-shadow: 0 0 5px white ;
 }
-.address
+.myinput-radio
 {
-    height: 85px;
+    margin: 12px 5px;
+    padding: 6px 10px 6px6px;
+    font-size: 16px;
+    /* background-color: #05050530; */
+    outline: none;
+    font-family: 'Teko', sans-serif;
 }
-
+.rb2
+{
+    margin-left: 10px;
+}
+.rb
+{
+    width: 15px;
+    height: 15px;
+}
 #btn {
     font-family: 'Teko', sans-serif;
     margin: auto;

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+  <title>Moon</title>
+  <script src="../static/index.js"></script>
+  <style>@import url('https://fonts.googleapis.com/css2?family=Teko:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Teko:wght@600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#navbar {
+    display: flex;
+    padding: 9px 10px;
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+    font-family: 'Teko', sans-serif;
+    font-size: 20px;
+}
+
+#logo
+{
+    display: inline-block;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    border-radius: 10px;
+    padding: 10px 10px;
+    font-size: 20px;
+    background-color: black;
+    
+}
+#logo a{
+    text-decoration: none;
+    color: white;
+}
+#logo:hover
+{
+    background-color: #ffffff;
+    /* color: black; */
+}
+#logo:hover + #logo p
+{
+        color: black;
+}
+#logo a:hover
+{
+    color: black;
+}
+#logo img{
+    width: 70px;
+    height: 70px;
+    position: sticky;
+}
+
+#navbar ul {
+    display: flex;
+    padding: 10px 10px;
+    flex-direction: row;
+    list-style: none;
+    margin: auto;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    margin: 3px 3px;
+    color: white;
+    padding: 2px 5px;
+}
+#navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 6px;
+    
+}
+.service-button
+{
+    cursor: pointer;
+}
+#navbar ul li {
+    margin: 3px 13px;
+    display: inline-block;
+}
+
+#introsection {
+    /* background-color: yellow; */
+    /* position: relative; */
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Teko', sans-serif;
+}
+
+#introsection div.d1 {
+    color: white;
+    font-size: 40px;
+    background-color: #161313a8;
+    padding: 0px 31px;
+    border-radius: 41px;
+}
+
+#introsection div.d2 {
+    color: white;
+    font-size: 14px;
+    background-color: #161313a8;
+    padding: 0px 31px;
+    border-radius: 41px;
+    margin-top: 2px;
+}
+
+#introsection::before {
+    position: absolute;
+    content: "";
+    background: url("static/bg2.jpg") no-repeat center center/cover;
+    /* height: 488px; */
+    height: 433px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /* opacity: 0.8; */
+
+}
+#missionsection
+{
+    width: 100%;
+    height: 269px;
+}
+#missionbox {
+    
+    display: flex;
+    /* height: 220px; */
+    padding: 3px 3px;
+    width: 100%;
+    margin: auto;
+}
+
+#item {
+    /* border: 1px solid black; */
+    border-radius: 25px;
+    padding: 13px 20px;
+    margin: 5px 9px;
+    width: 33%;
+    text-shadow: 0 0 5px #ffffff;
+    background-color: #efececb3;
+   
+}
+#item h3
+{
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bolder;
+    font-family: 'Kanit', sans-serif;
+}
+#item p
+{
+    font-family: 'Kanit', sans-serif;
+    font-size: 15px;
+    margin: 10px 2px;
+    text-align: center;
+
+}
+
+#missionsection::before {
+    content: "";
+    position: absolute;
+    background: url("static/m1.jpg") no-repeat center center/cover;
+    height: 269px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#missionsection h2 {
+    color: white;
+    font-family: 'Teko', sans-serif;
+    background-color: #16131396;
+    border-radius: 41px;
+    padding: 9px;
+    font-size: 22px;
+    text-align: center;
+    z-index: 1;
+    width: 200px;
+    margin: auto;
+}
+
+#sponsorsection {
+
+    background-color:#e5dcdca8;
+    height: 199px;
+}
+
+#sponsorsection h3 {
+
+    color: white;
+    font-family: 'Teko', sans-serif;
+    /* font-size: 14px; */
+    background-color:#16131396;
+    padding: 0px 31px;
+    /* border-radius: 41px; */
+    padding: 9px;
+    font-size: 22px;
+    text-align: center;
+    z-index: 1;
+}
+
+footer {
+    background-color: rgb(14, 13, 13);
+    height: 40px;
+}
+#sponsors
+{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+.sp
+{
+    margin: 10px 20px;
+}
+#end
+{
+    color: azure;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+.servicemenu
+{
+    display: none;
+}
+#navbar ul li:hover .servicemenu
+{
+    display: block;
+    position: absolute;
+    margin-left: -15px;
+}
+#navbar ul li:hover .servicemenu ul
+{
+    display: flex;
+    flex-direction: column;
+
+}
+#navbar ul li:hover .servicemenu ul li
+{
+    border-bottom: 1px dotted gray;
+    text-align: left;
+}
+.servicemenu
+{
+    background-color:black ;
+    border-radius: 5px;
+}
+
+  </style>
+  <body>
+    <nav id="navbar">
+      <div id="logo"><a href="/about#secondary"> <img src="../static/logo.png" alt="">
+          <p>Edu World</p></a></div>
+      <ul> 
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li class="service-button"><a>Services</a>
+          <div class="servicemenu">
+            <ul> 
+              <li><a href="/courses">Courses</a></li>
+              <li><a href="/about#location">Service Location</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="/contact">&nbspContact Us</a></li>
+        <li><a href="/why-us">&nbspWhy Us?</a></li>
+      </ul>
+    </nav>
+    <footer>
+      <div id="end">copyright© 2022 | All rigths reserved</div>
+    </footer>
+  </body>
+</html>

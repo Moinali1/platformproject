@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,500&display=swap');
+
+#wucontainer::before {
+    position: absolute;
+    content: "";
+    background: url("static/bg2.jpg") no-repeat center center/cover;
+    /* height: 488px; */
+    height: 457px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /* opacity: 0.8; */
+}
+
+.item {
+    color: #fffcfc;
+    font-weight: 600;
+    margin: 6px 0px;
+    text-shadow: -3px -2px 8px black
+}
+
+#wucontainer {
+    padding: 50px 50px 50px 50px;
+    height: 383px;
+}
+
+#wucontainer1 {
+    padding: 10px 10px 10px 10px;
+    width: 45%;
+    margin-left: 57px;
+}
+
+.c1 {
+    font-size: 39px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.c2 {
+    font-family: 'Kanit', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+
+
+}
+
+.container-btn {
+    padding: 5px 20px;
+    background-color: #655d5d87;
+    border-radius: 6px;
+    width: 105px;
+    cursor: pointer;
+}
+
+.container-btn:active {
+    background-color: aliceblue;
+}
+
+.wu-image1 img {
+    height: 275px;
+    width: 424px;
+    border-radius: 10px;
+}
+
+#wuprimary {
+    padding: 40px 10px 10px 10px;
+    height: 553px;
+    font-family: 'Kanit', sans-serif;
+}
+
+#wuprimary::before {
+    background-color: #000000ed;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    height: 552px;
+    width: 100%;
+    top: 457px;
+    left: 0;
+}
+
+#wuprimary-container {
+
+    width: 80%;
+    margin: auto;
+    padding: 10px 10px 10px 10px;
+    background-color: #343333;
+    border-radius: 10px;
+    box-shadow: white 1px 1px 15px
+}
+
+.head1 {
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ff9654;
+}
+
+.head2 {
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: white;
+}
+
+#wuprimary1 {
+
+    padding: 10px;
+}
+
+#wuprimary2 {
+
+    display: flex;
+
+}
+
+.wu-image1 {
+
+    width: fit-content;
+    padding: 20px;
+    margin-left: 11px;
+}
+
+#wuprimary2 {
+    padding: 10px;
+    margin: 10px;
+}
+
+.wuprimary22 {
+
+    width: 55%;
+    padding: 15px;
+    margin-left: 25px;
+}
+
+.wup4 {
+    display: flex;
+    padding: 5px;
+}
+
+.wup-list-box {
+    padding: 5px;
+    font-weight: 500;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.wup1 {
+    font-weight: 600;
+    color: #ff9654;
+
+}
+
+.wup2 {
+    font-weight: 600;
+    color: white;
+    padding: 8px 0px;
+    font-size: 1.5rem;
+}
+
+.wup3 {
+    font-weight: 500;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.wup42 {
+    margin-left: 60px;
+
+}
+
+.wup41 {
+    margin-left: 8px;
+
+}
+
+#end {
+    background-color: #343333;
+}
+
+
+.wublock img {
+    height: 103px;
+    width: 102px;
+}
+
+#wuseconadry1 {
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+}
+
+#wuseconadry2 {
+    margin: auto;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.wuseconadry1-row {
+    display: flex;
+    margin: 15px auto;
+}
+
+#wusecondary {
+    font-family: 'Kanit', sans-serif;
+}
+
+#wusecondary::before {
+    background: url("../static/secondarybd2.jpg") no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    height: 576px;
+    width: 100%;
+
+}
+
+.space-block {
+    height: 15px;
+}
+
+.wublock {
+    padding: 19px;
+    height: 192px;
+    width: 282px;
+}
+
+.img-box {
+    text-align: center;
+}
+
+.box-content {
+    text-align: center;
+    color: #ff7f4dd4;
+    font-size: 0.8rem;
+}
+
+.box0 {
+    padding: 30px;
+    text-align: center;
+    color: white;
+    font-size: 0.8rem;
+}
+.wusecondary-head
+{
+    font-size: 2.2rem;
+    color: #ff7f4dd4;
+    font-weight: 600;
+}

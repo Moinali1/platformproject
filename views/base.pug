@@ -1,22 +1,28 @@
 doctype html
 html
-  head
+  block head
     title Moon
     block scripts
       script(src='../static/index.js')
     block style 
         style
-            include ../static/style.css  
+            include ../static/style.css         
   body
     nav#navbar
         div#logo
+          a(href="/about#secondary") 
             img(src="../static/logo.png", alt="") 
+            p Edu World
         ul 
             li #[a(href="/") Home]
-            li #[a(href="/") About]
-            li #[a(href="/") Services]
-            li #[a(href="/") Class Info]
-            li #[a(href="/contact") Contact Us]
+            li #[a(href="/about") About]
+            li.service-button #[a Services]
+              div.servicemenu
+                ul 
+                  li #[a(href="/courses") Courses]
+                  li #[a(href="/about#location") Service Location]
+            li #[a(href="/contact") &nbspContact Us]
+            li #[a(href="/why-us") &nbspWhy Us?]
     block content   
     block foot
       footer

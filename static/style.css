@@ -21,8 +21,30 @@
 {
     display: inline-block;
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 10px;
+    left: 10px;
+    border-radius: 10px;
+    padding: 10px 10px;
+    font-size: 20px;
+    background-color: black;
+    
+}
+#logo a{
+    text-decoration: none;
+    color: white;
+}
+#logo:hover
+{
+    background-color: #ffffff;
+    /* color: black; */
+}
+#logo:hover + #logo p
+{
+        color: black;
+}
+#logo a:hover
+{
+    color: black;
 }
 #logo img{
     width: 70px;
@@ -48,8 +70,12 @@
     background-color: white;
     color: black;
     border-radius: 6px;
+    
 }
-
+.service-button
+{
+    cursor: pointer;
+}
 #navbar ul li {
     margin: 3px 13px;
     display: inline-block;
@@ -93,14 +119,18 @@
     top: 0;
     left: 0;
     z-index: -1;
-    opacity: 0.8;
+    /* opacity: 0.8; */
 
 }
-
+#missionsection
+{
+    width: 100%;
+    height: 269px;
+}
 #missionbox {
     
     display: flex;
-    height: 220px;
+    /* height: 220px; */
     padding: 3px 3px;
     width: 100%;
     margin: auto;
@@ -112,7 +142,6 @@
     padding: 13px 20px;
     margin: 5px 9px;
     width: 33%;
-    height: 90%;
     text-shadow: 0 0 5px #ffffff;
     background-color: #efececb3;
    
@@ -153,7 +182,7 @@
     font-size: 22px;
     text-align: center;
     z-index: 1;
-    width: 16%;
+    width: 200px;
     margin: auto;
 }
 
@@ -197,4 +226,33 @@ footer {
     color: azure;
     text-align: center;
     padding: 10px;
+}
+
+
+
+.servicemenu
+{
+    display: none;
+}
+#navbar ul li:hover .servicemenu
+{
+    display: block;
+    position: absolute;
+    margin-left: -15px;
+}
+#navbar ul li:hover .servicemenu ul
+{
+    display: flex;
+    flex-direction: column;
+
+}
+#navbar ul li:hover .servicemenu ul li
+{
+    border-bottom: 1px dotted gray;
+    text-align: left;
+}
+.servicemenu
+{
+    background-color:black ;
+    border-radius: 5px;
 }

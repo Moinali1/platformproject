@@ -1,5 +1,13 @@
 extends base.pug
-
+block head 
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Food Delivery
+    block style 
+        style
+            include ../static/style.css
+    link(rel='stylesheet' media='screen and (max-width: 950px)' href='../static/home-phone.css')
 block content 
     section#introsection 
         div.d1 Welcome to the best Learning Platform! 
@@ -19,8 +27,8 @@ block content
     section#sponsorsection  
         h3 Our Sponsors
         div#sponsors
-            img(src="../static/sp1.png", alt="" class="img1 sp")
             img(src="../static/sp2.png", alt="" class="img2 sp")
             img(src="../static/sp3.png", alt="" class="img3 sp")
             img(src="../static/sp4.png", alt="" class="img4 sp")
             img(src="../static/sp5.png", alt="" class="img5 sp")
+            img(src="../static/sp1.png", alt="" class="img1 sp")

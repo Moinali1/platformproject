@@ -16,11 +16,22 @@ db.once('open', function() {
 });
 
 const learningSchema = new mongoose.Schema({
-    name: String,
-    phone: String,
-    email: String,
-    pin: String,
-    address: String
+    name:{type:String,
+          required:true},
+    phone:{type:Number,
+             required:true},
+    email:  {type:String,
+             required:true,
+            //  unique:true
+            },
+    gender: {type:String,
+             required:true},
+    course: {type:String,
+             required:true},
+    pin:    {type:String,
+             required:true},
+    address:{type:String,
+             required:true}
 });
 const contact = mongoose.model('contact', learningSchema);
 
@@ -37,18 +48,49 @@ app.get('/', (req, res)=>{
     const params = {}
     res.status(200).render('home.pug', params);
 })
+app.get('/about', (req, res)=>{
+    const params = {}
+    res.status(200).render('about.pug', params);
+})
+app.get('/courses', (req, res)=>{
+    const params = {}
+    res.status(200).render('courses.pug', params);
+})
 app.get('/contact', (req, res)=>{
     const params = {}
     res.status(200).render('contact.pug', params);
 })
 app.post('/contact', (req, res)=>{
-    var resultdata=new contact(req.body);
+    var resultdata=new contact({
+    name:req.body.name,
+    phone:req.body.phone,
+    email:req.body.email,
+    gender:req.body.gender,
+    course:req.body.course,
+    pin:req.body.pin,
+    address:req.body.address
+    })
     resultdata.save().then(()=>{
         res.send("The details are saved succesfully, we will shortly contact you.");
     }).catch(()=>{
-        res.status(400).send("details not saved");
+        res.status(400).send("Details not saved,check there is some mistake in entey or email is already used");
     })
     
+})
+
+// app.post('/contact', (req, res)=>{
+//     var resultdata=new contact(req.body);
+//     resultdata.save().then(()=>{
+//         res.send("The details are saved succesfully, we will shortly contact you.");
+//     }).catch(()=>{
+//         res.status(400).send("details not saved");
+//     })
+    
+// })
+
+app.get('/why-us', (req, res)=>{
+    const params = {}
+    res.status(200).render('why-us.pug', params);
 })
 
 // START THE SERVER

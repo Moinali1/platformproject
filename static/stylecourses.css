@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Teko:wght@600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+.courses-primary::before
+{
+background: url("static/bg2.jpg") no-repeat center center/cover;
+content: "";
+position: absolute;
+height: 839px;
+width: 100%;
+z-index: -1;
+top:0;
+left:0;
+}
+
+.cp1
+{
+    text-align: center;
+    font-size: 2rem;
+    background-color: #161313a8;
+    color:rgba(250, 248, 248, 0.945);
+    font-family: 'Teko', sans-serif;
+    width: 18%;
+    margin:30px auto;
+    border-radius: 10px;
+}
+#container
+{
+    
+    background-color: #00000078;
+    height: 600px;
+    width: 70%;
+    margin: 0px auto;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.box
+{
+    /* border: 2px solid red; */
+    height: 130px;
+    width: 280px;
+    margin: 13px;
+    padding: 23px 0px 22px 17px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    background-color: #00000066;
+    font-family: 'Teko', sans-serif;
+}
+.box img
+{
+    height: 75px;
+    width: 80px;
+}
+.container-row
+{
+    margin:10px auto;
+    display: flex;
+    flex-direction: row;
+}
+.box div
+{
+    margin: 3px;
+}
+.box p{
+    font-size: 1.3rem;
+    font-family: 'Teko', sans-serif;
+
+}
+.box0
+{
+    background-color: #00000066;
+    color: white;
+}
+.btn
+{
+    padding: 0px 6px;
+    background-color: aliceblue;
+    color: black;
+    width: 44px;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    
+}
+.btn:hover{
+background-color: burlywood;
+}
+.btn:active{
+    background-color: white;
+    }
+.box-div2
+{
+    margin-left:4px ;
+}
+.box-div2 a
+{
+    text-decoration: none;
+}

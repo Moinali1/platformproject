@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Teko:wght@600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#primary {
+    height: 327px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+#primary::before {
+    background: url("static/bg2.jpg") no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    height: 400px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.d1 {
+    color: white;
+    font-size: 40px;
+    background-color: #161313a8;
+    padding: 0px 31px;
+    margin-top: 120px;
+    border-radius: 10px;
+    font-family: 'Teko', sans-serif;
+}
+
+#primary2 {
+    height: 100px;
+    background-color: rgb(190, 186, 180);
+
+
+}
+
+.d2 {
+    text-align: center;
+    padding: 25px 70px 25px 70px;
+    font-size: 1.1rem;
+    font-family: 'Teko', sans-serif;
+}
+
+
+
+
+#secondary {
+    background-color: #b2aeab52;
+    ;
+    font-family: 'Teko', sans-serif;
+
+}
+
+.sec1 {
+    padding: 50px;
+}
+
+.sec12 ul {
+    display: flex;
+    padding: 10px 10px;
+    flex-direction: row;
+    list-style: none;
+
+}
+
+.sec11 {
+    margin-left: 20px;
+    font-size: 2rem;
+    margin-bottom: 20px;
+
+}
+
+.sec12 ul li {
+    /* margin-left: 100px; */
+    font-size: 1.3rem;
+}
+
+.l1 {
+    margin-left: 40px;
+    color: #f40808;
+}
+
+.l2 {
+    margin-left: 322px;
+}
+
+.l3 {
+    margin-left: 275px;
+}
+
+.ter1 {
+    padding: 50px 50px;
+}
+
+.ter11 {
+    font-family: 'Teko', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    margin-left: 23px;
+}
+
+.ter12 {
+    margin-left: 53px;
+    font-family: 'Teko', sans-serif;
+}
+
+#ternary {
+    background-color: black;
+    color: beige;
+}
+
+.dan1 {
+    padding: 50px 50px;
+}
+
+.dan11 {
+    font-family: 'Teko', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    margin-left: 23px;
+}
+
+.dan12 {
+    margin-left: 53px;
+    font-family: 'Teko', sans-serif;
+}
+
+#danger {
+    background-color: #b2aeab52;
+    color: black;
+    align-items: center;
+    justify-content: center;
+}
+
+#location {
+    font-family: 'Teko', sans-serif;
+}
+
+.lochead {
+    font-family: 'Teko', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    margin-left: 73px;
+    padding-top: 16px;
+}
+
+.loc1 ul li {
+    padding: 10px 10px;
+}
+
+.loc1 ul {
+    display: flex;
+    list-style: none;
+
+}
+
+.loc1 li a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.loc1 ul p {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.row1 ul {
+    align-items: center;
+    justify-content: center;
+}
+
+.row2 ul {
+    align-items: center;
+    justify-content: center;
+}
+
+.row3 ul {
+    align-items: center;
+    justify-content: center;
+}
+
+#location {
+    background-color: rgb(190 186 180);
+}
+
+.row1 {
+    background-color: #b2aeab52;
+}
+
+.row3 {
+    background-color: #b2aeab52;
+}
+
+.city {
+    border-radius: 20px;
+    width: 213px;
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+
+.city:hover {
+    width: 230px;
+    color: #f40808;
+}
+
+
+.city:hover+#para {
+    color: #f40808;
+}
+
+#para:hover {
+    color: #f40808;
+}
+
+.city1:hover
+{
+    content: url("static/b2.jpg");
+}
+.city2:hover
+{
+    content: url("static/b1.jpg");
+}
+.city3:hover
+{
+    content: url("static/b3.jpg");
+}
+.city4:hover
+{
+    content: url("static/b4.jpg");
+}
+.city5:hover
+{
+    content: url("static/b5.jpg");
+}
+.city6:hover
+{
+    content: url("static/b6.jpg");
+}
+.city7:hover
+{
+    content: url("static/b7.jpg");
+}
+.city8:hover
+{
+    content: url("static/b8.jpg");
+}
+.city9:hover
+{
+    content: url("static/b9.jpg");
+}
+
+.row {
+    height: 425px;
+}
+
+/* #para:hover
+{
+    transition: color .1s linear;
+    color: #f40808;
+} */
+#line {
+    height: 5px;
+    border-radius: 15px;
+    width: 63%;
+    margin: auto;
+    background-color: #0000004d;
+}
